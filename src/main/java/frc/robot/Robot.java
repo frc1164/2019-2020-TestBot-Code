@@ -81,8 +81,8 @@ import com.ctre.phoenix.motorcontrol.can.VictorSPX;
     Axis_1 = (Math.abs(Axis_1) <= 0.1) ? 0 : Axis_1; 
 
     //Speed value for Left Motors
-    double Speed_L = ((Axis_3*Axis_1) - Axis_2);
-    double Speed_R = ((Axis_3*Axis_1) + Axis_2);
+    double Speed_L = ((-Axis_3*Axis_1) - Axis_2);
+    double Speed_R = ((-Axis_3*Axis_1) + Axis_2);
 
     //Displays Joystick values on Smart Dashboard
     SmartDashboard.putNumber("Left Motors", Speed_L);
