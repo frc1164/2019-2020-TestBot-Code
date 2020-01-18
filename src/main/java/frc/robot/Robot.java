@@ -47,7 +47,7 @@ import com.ctre.phoenix.motorcontrol.can.VictorSPX;
    
    //If statements shift gears with button press
    
-    if (m_Stick.getRawButton(8) == true);{
+    if (m_Stick.getRawButton(8) == true){
       // Button B
       num_1.set(false);
       num_0.set(false);
@@ -57,7 +57,7 @@ import com.ctre.phoenix.motorcontrol.can.VictorSPX;
       SmartDashboard.putNumber("Button 8 Pushed", 1);
     }
 
-    if (m_Stick.getRawButton(9) == true);{
+    if (m_Stick.getRawButton(9) == true){
       // Button A
       num_6.set(false);
       num_7.set(false);
